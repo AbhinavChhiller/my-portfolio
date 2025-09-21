@@ -1,111 +1,114 @@
+import { info } from "autoprefixer";
 import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  sql,
-  mui,
-  arun_kumar,
-  bhuwan_pahuja,
-  harvinder,
+	mobile,
+	backend,
+	creator,
+	web,
+	javascript,
+	typescript,
+	html,
+	css,
+	reactjs,
+	redux,
+	tailwind,
+	nodejs,
+	mongodb,
+	git,
+	sql,
+	mui,
+	arun_kumar,
+	bhuwan_pahuja,
+	harvinder,
+  penny_picks,
+  Infomania,
+  ai_resume,
 } from "../assets";
 import grant_thornton from "../assets/company/grant_thornton.png";
 
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+	{
+		id: "about",
+		title: "About",
+	},
+	{
+		id: "work",
+		title: "Work",
+	},
+	{
+		id: "contact",
+		title: "Contact",
+	},
 ];
 
 const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "Frontend Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "FullStack Developer",
-    icon: creator,
-  },
+	{
+		title: "Web Developer",
+		icon: web,
+	},
+	{
+		title: "Frontend Developer",
+		icon: mobile,
+	},
+	{
+		title: "Backend Developer",
+		icon: backend,
+	},
+	{
+		title: "FullStack Developer",
+		icon: creator,
+	},
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-   {
-    name: "Material UI",
-    icon: mui,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySQL",
-    icon: sql,
-  },
-  
-  {
-    name: "git",
-    icon: git,
-  },
-  
+	{
+		name: "HTML 5",
+		icon: html,
+	},
+	{
+		name: "CSS 3",
+		icon: css,
+	},
+	{
+		name: "JavaScript",
+		icon: javascript,
+	},
+	{
+		name: "TypeScript",
+		icon: typescript,
+	},
+	{
+		name: "React JS",
+		icon: reactjs,
+	},
+	{
+		name: "Redux Toolkit",
+		icon: redux,
+	},
+	{
+		name: "Tailwind CSS",
+		icon: tailwind,
+	},
+	{
+		name: "Material UI",
+		icon: mui,
+	},
+	{
+		name: "Node JS",
+		icon: nodejs,
+	},
+	{
+		name: "MongoDB",
+		icon: mongodb,
+	},
+	{
+		name: "MySQL",
+		icon: sql,
+	},
+
+	{
+		name: "git",
+		icon: git,
+	},
 ];
 
 const experiences = [
@@ -115,7 +118,7 @@ const experiences = [
 		company_name: "Grant Thornton",
 		icon: grant_thornton,
 		// iconBg: "#383E56",
-    iconBg: "white",
+		iconBg: "white",
 		date: "June 2023 - July 2024",
 		points: [
 			" • Implemented JWT-based authentication, securing access for 500+ user accounts and enhancing data protection.",
@@ -129,7 +132,7 @@ const experiences = [
 		designation: "Consultant",
 		company_name: "Grant Thornton",
 		icon: grant_thornton,
-	iconBg: "white",
+		iconBg: "white",
 		date: "August 2024 - Present",
 		points: [
 			" • Analyzed requirements and contributed to design, development, integration, deployment, and unit testing of enterprise features.",
@@ -140,55 +143,109 @@ const experiences = [
 	},
 ];
 const testimonials = [
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Abhinav does.",
-    name: "Arun Kumar",
-    designation: "Founder",
-    company: "Atharv Investments",
-    image:arun_kumar
-  },
-  {
-    testimonial:
-      "Working with Abhinav has been a fantastic experience. His technical expertise and collaborative approach consistently help our team deliver high-quality solutions on time.",
-    name: "Bhuwan Pahuja",
-    designation: "Senior Consultant",
-    company: "Deloitte",
-    image: bhuwan_pahuja
-  },
-  {
-    testimonial:
-      "Abhinav is a reliable teammate who always brings creative ideas and pays great attention to detail.",
-    name: "Harvinder",
-    designation: "Developer",
-    company: "Leaf Technologies",
-    image: harvinder,
-  },
+	{
+		testimonial:
+			"I've never met a web developer who truly cares about their clients' success like Abhinav does.",
+		name: "Arun Kumar",
+		designation: "Founder",
+		company: "Atharv Investments",
+		image: arun_kumar,
+	},
+	{
+		testimonial:
+			"Working with Abhinav has been a fantastic experience. His technical expertise and collaborative approach consistently help our team deliver high-quality solutions on time.",
+		name: "Bhuwan Pahuja",
+		designation: "Senior Consultant",
+		company: "Deloitte",
+		image: bhuwan_pahuja,
+	},
+	{
+		testimonial:
+			"Abhinav is a reliable teammate who always brings creative ideas and pays great attention to detail.",
+		name: "Harvinder",
+		designation: "Developer",
+		company: "Leaf Technologies",
+		image: harvinder,
+	},
 ];
 
 const projects = [
+	{
+		name: "Penny Picks",
+		description:
+			"E-commerce platform built with MERN stack, enabling users to securely browse, search, and purchase products with account management and order history features.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+			{
+				name: "mongodb",
+				color: "green-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "pink-text-gradient",
+			},
+			{
+				name: "nodeJS",
+				color: "lime-text-gradient",
+			},
+		],
+		image: penny_picks,
+		source_code_link: "https://github.com/",
+		live_demo_link: "abc",
+	},
   {
-    name: "test",
-    description:
-      "test",
-    tags: [
+		name: "InfoMania",
+		description:
+			"A responsive movie database app with React.js and Tailwind CSS, integrating TMDB API for real-time movie details, ratings, and reviews.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+		{
+				name: "HTML-CSS",
+				color: "orange-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "pink-text-gradient",
+			},
+			
+		],
+		image: Infomania,
+		source_code_link: "https://github.com/",
+		live_demo_link: "abc",
+	},
+  {
+		name: "AI Resume",
+		description:
+			"A responsive resume builder app with React.js and Tailwind CSS, allowing users to create, edit, and download their resumes with AI assistance.",
+		tags: [
+			{
+				name: "react",
+				color: "blue-text-gradient",
+			},
+		{
+				name: "strapi",
+				color: "lime-text-gradient",
+			},
+			{
+				name: "tailwind",
+				color: "pink-text-gradient",
+			},
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: mongodb,
-    source_code_link: "https://github.com/",
-  },
-  
+				name: "sql",
+				color: "green-text-gradient",
+			},
+			
+		],
+		image: ai_resume,
+		source_code_link: "https://github.com/",
+		live_demo_link: "abc",
+	},
 ];
 
 export { services, technologies, experiences, testimonials, projects };

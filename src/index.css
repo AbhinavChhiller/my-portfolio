@@ -97,6 +97,37 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.orange-text-gradient {
+  background: #f6d365; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #fda085,
+    #f6d365
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #fda085,
+    #f6d365
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lime-text-gradient {
+  background: #a8e063; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #56ab2f,
+    #a8e063
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #56ab2f,
+    #a8e063
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .pink-text-gradient {
   background: #ec008c; /* fallback for old browsers */

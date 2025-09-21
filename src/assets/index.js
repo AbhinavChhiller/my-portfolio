@@ -26,6 +26,11 @@ import tripguide from "./tripguide.png";
 import arun_kumar from "./testimonials/arun_kumar.jpg";
 import bhuwan_pahuja from "./testimonials/bhuwan_pahuja.jpg";
 import harvinder from "./testimonials/harvinder.jpg";
+import live_link from "./live_link.png";
+
+import ai_resume from "./projects/ai_resume.png";
+import Infomania from "./projects/Infomania.png";
+import penny_picks from "./projects/penny_picks.png";
 
 export {
   logo,
@@ -53,5 +58,9 @@ export {
   mui,
   arun_kumar,
   bhuwan_pahuja,
-  harvinder
+  harvinder,
+  live_link,
+  ai_resume,
+  Infomania,
+  penny_picks
 };
