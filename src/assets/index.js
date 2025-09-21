@@ -19,9 +19,6 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import sql from "./tech/mySQL.png";
 import mui from "./tech/mui.png";
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
 
 import arun_kumar from "./testimonials/arun_kumar.jpg";
 import bhuwan_pahuja from "./testimonials/bhuwan_pahuja.jpg";
@@ -51,9 +48,6 @@ export {
   redux,
   tailwind,
   typescript,
-  carrent,
-  jobit,
-  tripguide,
   sql,
   mui,
   arun_kumar,

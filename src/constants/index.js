@@ -121,10 +121,10 @@ const experiences = [
 		iconBg: "white",
 		date: "June 2023 - July 2024",
 		points: [
-			" • Implemented JWT-based authentication, securing access for 500+ user accounts and enhancing data protection.",
-			" • Designed and optimized SQL queries and stored procedures, reducing query execution time by ~20%.",
-			" • Built React-based UIs and implemented data pipelines/validation rules using Inferyx, improving efficiency in tax module workflows.",
-			" • Collaborated in Agile sprints, performing code reviews, debugging, and deployments, ensuring on-time delivery of features.",
+			"Implemented JWT-based authentication, securing access for 500+ user accounts and enhancing data protection.",
+			"Designed and optimized SQL queries and stored procedures, reducing query execution time by ~20%.",
+			"Built React-based UIs and implemented data pipelines/validation rules using Inferyx, improving efficiency in tax module workflows.",
+			"Collaborated in Agile sprints, performing code reviews, debugging, and deployments, ensuring on-time delivery of features.",
 		],
 	},
 	{
@@ -135,10 +135,10 @@ const experiences = [
 		iconBg: "white",
 		date: "August 2024 - Present",
 		points: [
-			" • Analyzed requirements and contributed to design, development, integration, deployment, and unit testing of enterprise features.",
-			" • Developed tax-related modules (GSTR-1, GSTR-2A/2B, GSTR-3B, ITC-04) for flagship product GTaxPro, improving automation for compliance processes.",
-			" • Optimized React applications using lazy loading, Redux, and debouncing, improving page load speed by 30% and boosting customer satisfaction.",
-			" • Built and integrated multiple RESTful APIs with Node.js and Express, ensuring seamless data exchange and reducing backend response errors by 25%.",
+			"Analyzed requirements and contributed to design, development, integration, deployment, and unit testing of enterprise features.",
+			"Developed tax-related modules (GSTR-1, GSTR-2A/2B, GSTR-3B, ITC-04) for flagship product GTaxPro, improving automation for compliance processes.",
+			"Optimized React applications using lazy loading, Redux, and debouncing, improving page load speed by 30% and boosting customer satisfaction.",
+			"Built and integrated multiple RESTful APIs with Node.js and Express, ensuring seamless data exchange and reducing backend response errors by 25%.",
 		],
 	},
 ];
@@ -193,8 +193,8 @@ const projects = [
 			},
 		],
 		image: penny_picks,
-		source_code_link: "https://github.com/",
-		live_demo_link: "abc",
+		source_code_link: "https://github.com/AbhinavChhiller/PennyPicks",
+		live_demo_link: "https://pennypicks.onrender.com/",
 	},
   {
 		name: "InfoMania",
@@ -216,8 +216,8 @@ const projects = [
 			
 		],
 		image: Infomania,
-		source_code_link: "https://github.com/",
-		live_demo_link: "abc",
+		source_code_link: "https://github.com/AbhinavChhiller/infoMania",
+		live_demo_link: "https://infomania.netlify.app/",
 	},
   {
 		name: "AI Resume",
@@ -243,8 +243,8 @@ const projects = [
 			
 		],
 		image: ai_resume,
-		source_code_link: "https://github.com/",
-		live_demo_link: "abc",
+		source_code_link: "https://github.com/AbhinavChhiller/ai-resume-frontend",
+		live_demo_link: "https://ai-resume-frontend-au5b.onrender.com/",
 	},
 ];
 
