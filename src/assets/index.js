@@ -23,6 +23,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import arun_kumar from "./testimonials/arun_kumar.jpg";
+import bhuwan_pahuja from "./testimonials/bhuwan_pahuja.jpg";
+import harvinder from "./testimonials/harvinder.jpg";
+
 export {
   logo,
   backend,
@@ -46,5 +50,8 @@ export {
   jobit,
   tripguide,
   sql,
-  mui
+  mui,
+  arun_kumar,
+  bhuwan_pahuja,
+  harvinder
 };

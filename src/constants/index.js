@@ -13,11 +13,11 @@ import {
   nodejs,
   mongodb,
   git,
-  carrent,
-  jobit,
-  tripguide,
   sql,
-  mui
+  mui,
+  arun_kumar,
+  bhuwan_pahuja,
+  harvinder,
 } from "../assets";
 import grant_thornton from "../assets/company/grant_thornton.png";
 
@@ -142,13 +142,28 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "test",
-    name: "test",
-    designation: "test",
-    company: "test",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I've never met a web developer who truly cares about their clients' success like Abhinav does.",
+    name: "Arun Kumar",
+    designation: "Founder",
+    company: "Atharv Investments",
+    image:arun_kumar
   },
-
+  {
+    testimonial:
+      "Working with Abhinav has been a fantastic experience. His technical expertise and collaborative approach consistently help our team deliver high-quality solutions on time.",
+    name: "Bhuwan Pahuja",
+    designation: "Senior Consultant",
+    company: "Deloitte",
+    image: bhuwan_pahuja
+  },
+  {
+    testimonial:
+      "Abhinav is a reliable teammate who always brings creative ideas and pays great attention to detail.",
+    name: "Harvinder",
+    designation: "Developer",
+    company: "Leaf Technologies",
+    image: harvinder,
+  },
 ];
 
 const projects = [
