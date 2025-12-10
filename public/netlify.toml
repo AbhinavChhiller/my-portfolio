@@ -2,3 +2,24 @@
 from="/*"
 to="/index.html"
 status=200
+
+# Cache rules for optimal performance
+[[headers]]
+# Cache hashed assets forever (they have content hashes so safe for long TTLs)
+for = "/assets/*"
+[headers.values]
+  Cache-Control = "public, max-age=31536000, immutable"
+  # Enable compression: Netlify serves .gz and .br if available
+  Content-Encoding = "gzip"
+
+[[headers]]
+# Cache HTML and index files with shorter TTL (check for updates frequently)
+for = "/*.html"
+[headers.values]
+  Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+# Cache SVGs and other static assets with medium TTL
+for = "/**/*.{svg,webp,woff,woff2}"
+[headers.values]
+  Cache-Control = "public, max-age=604800, immutable"

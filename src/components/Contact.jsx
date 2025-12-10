@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, Suspense, lazy, useCallback } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+const EarthCanvas = lazy(() => import("./canvas/Earth"));
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -19,17 +19,17 @@ const Contact = () => {
 
 	const [loading, setLoading] = useState(false);
 
-	const handleChange = (e) => {
+	const handleChange = useCallback((e) => {
 		const { target } = e;
 		const { name, value } = target;
 
-		setForm({
-			...form,
+		setForm((prevForm) => ({
+			...prevForm,
 			[name]: value,
-		});
-	};
+		}));
+	}, []);
 
-	const handleSubmit = (e) => {
+	const handleSubmit = useCallback((e) => {
 		e.preventDefault();
 		setLoading(true);
 
@@ -41,8 +41,9 @@ const Contact = () => {
 					from_name: form.name,
 					to_name: "Abhinav Chhiller",
 					from_email: form.email,
-					to_email: "abhinavchhiller@gmail.com",
+					to_email: form.email,
 					message: form.message,
+					reply_to: form.email 
 				},
 				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 			)
@@ -66,7 +67,7 @@ const Contact = () => {
 					toast.error("Ahh, something went wrong. Please try again.");
 				}
 			);
-	};
+	}, [form]);
 
 	return (
 		<div
@@ -126,7 +127,9 @@ const Contact = () => {
 			<motion.div
 				variants={slideIn("right", "tween", 0.2, 1)}
 				className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]">
-				<EarthCanvas />
+						<Suspense fallback={null}>
+							<EarthCanvas />
+						</Suspense>
 			</motion.div>
 			<Toaster position="bottom-right" reverseOrder={false} />
 		</div>

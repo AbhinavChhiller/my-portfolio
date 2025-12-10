@@ -3,17 +3,26 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github,live_link } from "../assets";
+import { github, live_link } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
+// Picture helper component for WebP with fallback
+const PictureImage = ({ src, srcWebp, alt, className, ...props }) => (
+  <picture>
+    {srcWebp && <source srcSet={srcWebp} type="image/webp" />}
+    <img src={src} alt={alt} className={className} {...props} />
+  </picture>
+);
+
+const ProjectCard = React.memo(({
   index,
   name,
   description,
   tags,
   image,
+  imageWebp,
   source_code_link,
   live_demo_link
 }) => {
@@ -28,9 +37,12 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-[230px]'>
-          <img
+          <PictureImage
             src={image}
+            srcWebp={imageWebp}
             alt='project_image'
+            loading='lazy'
+            decoding='async'
             className='w-full h-full object-cover rounded-2xl'
           />
 
@@ -43,6 +55,8 @@ const ProjectCard = ({
                 <img
                   src={github}
                   alt='source code'
+                  loading='lazy'
+                  decoding='async'
                   className='w-1/2 h-1/2 object-contain'
                 />
               </div>
@@ -59,6 +73,8 @@ const ProjectCard = ({
                   <img
                     src={live_link}
                     alt='live demo'
+                    loading='lazy'
+                    decoding='async'
                     className='object-contain'
                   />
                 </div>
@@ -92,7 +108,13 @@ const ProjectCard = ({
       </Tilt>
     </motion.div>
   );
-};
+}, (prevProps, nextProps) => {
+  return (
+    prevProps.index === nextProps.index &&
+    prevProps.name === nextProps.name &&
+    prevProps.image === nextProps.image
+  );
+});
 
 const Works = () => {
   return (

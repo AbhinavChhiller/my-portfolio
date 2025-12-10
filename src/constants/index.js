@@ -1,27 +1,49 @@
 import { info } from "autoprefixer";
 import {
 	mobile,
+	mobile_webp,
 	backend,
+	backend_webp,
 	creator,
+	creator_webp,
 	web,
+	web_webp,
 	javascript,
+	javascript_webp,
 	typescript,
+	typescript_webp,
 	html,
+	html_webp,
 	css,
+	css_webp,
 	reactjs,
+	reactjs_webp,
 	redux,
+	redux_webp,
 	tailwind,
+	tailwind_webp,
 	nodejs,
+	nodejs_webp,
 	mongodb,
+	mongodb_webp,
 	git,
+	git_webp,
 	sql,
+	sql_webp,
 	mui,
+	mui_webp,
 	arun_kumar,
+	arun_kumar_webp,
 	bhuwan_pahuja,
+	bhuwan_pahuja_webp,
 	harvinder,
+	harvinder_webp,
   penny_picks,
+  penny_picks_webp,
   Infomania,
+  Infomania_webp,
   ai_resume,
+  ai_resume_webp,
 } from "../assets";
 import grant_thornton from "../assets/company/grant_thornton.png";
 
@@ -150,6 +172,7 @@ const testimonials = [
 		designation: "Founder",
 		company: "Atharv Investments",
 		image: arun_kumar,
+		imageWebp: arun_kumar_webp,
 	},
 	{
 		testimonial:
@@ -158,6 +181,7 @@ const testimonials = [
 		designation: "Senior Consultant",
 		company: "Deloitte",
 		image: bhuwan_pahuja,
+		imageWebp: bhuwan_pahuja_webp,
 	},
 	{
 		testimonial:
@@ -166,6 +190,7 @@ const testimonials = [
 		designation: "Developer",
 		company: "Leaf Technologies",
 		image: harvinder,
+		imageWebp: harvinder_webp,
 	},
 ];
 
@@ -193,6 +218,7 @@ const projects = [
 			},
 		],
 		image: penny_picks,
+		imageWebp: penny_picks_webp,
 		source_code_link: "https://github.com/AbhinavChhiller/PennyPicks",
 		live_demo_link: "https://pennypicks.onrender.com/",
 	},
@@ -216,6 +242,7 @@ const projects = [
 			
 		],
 		image: Infomania,
+		imageWebp: Infomania_webp,
 		source_code_link: "https://github.com/AbhinavChhiller/infoMania",
 		live_demo_link: "https://infomania.netlify.app/",
 	},
@@ -243,6 +270,7 @@ const projects = [
 			
 		],
 		image: ai_resume,
+		imageWebp: ai_resume_webp,
 		source_code_link: "https://github.com/AbhinavChhiller/ai-resume-frontend",
 		live_demo_link: "https://ai-resume-frontend-au5b.onrender.com/",
 	},
