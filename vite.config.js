@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 // Visualizer: generates a bundle report to help with analysis
 import { visualizer } from 'rollup-plugin-visualizer'
 
+// Force cache clear - v2
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
