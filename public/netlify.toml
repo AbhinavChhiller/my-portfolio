@@ -9,8 +9,6 @@ status=200
 for = "/assets/*"
 [headers.values]
   Cache-Control = "public, max-age=31536000, immutable"
-  # Enable compression: Netlify serves .gz and .br if available
-  Content-Encoding = "gzip"
 
 [[headers]]
 # Cache HTML and index files with shorter TTL (check for updates frequently)
