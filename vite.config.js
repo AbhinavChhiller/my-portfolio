@@ -17,16 +17,23 @@ export default defineConfig({
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
+            // React core must load first
+            if (id.includes('react/') || id.includes('react-dom/')) {
+              return 'chunk-react';
+            }
+            // Three.js and related 3D libraries
             if (id.includes('three') || id.includes('@react-three') || id.includes('maath')) {
               return 'chunk-three';
             }
+            // Framer Motion animation library
             if (id.includes('framer-motion')) {
               return 'chunk-framer';
             }
-            if (id.includes('react') || id.includes('react-dom')) {
-              return 'chunk-react';
+            // Zustand state management
+            if (id.includes('zustand')) {
+              return 'chunk-zustand';
             }
-            if (id.includes('zustand')) return 'chunk-zustand';
+            // Everything else in vendor chunk
             return 'chunk-vendor';
           }
         }
