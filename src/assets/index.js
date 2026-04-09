@@ -28,6 +28,9 @@ import live_link from "./live_link.png";
 import ai_resume from "./projects/ai_resume.png";
 import Infomania from "./projects/Infomania.png";
 import penny_picks from "./projects/penny_picks.png";
+import fit_zone from "./projects/FitZone.png";
+import easy_captcha from "./projects/easy_captcha.png";
+import jesko_jets from "./projects/jesko_jets.png";
 
 export {
   logo,
@@ -56,5 +59,8 @@ export {
   live_link,
   ai_resume,
   Infomania,
-  penny_picks
+  penny_picks,
+  fit_zone,
+  easy_captcha,
+  jesko_jets
 };

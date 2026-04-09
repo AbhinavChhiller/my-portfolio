@@ -31,8 +31,14 @@ const Computers = ({ isMobile }) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [webGLSupported, setWebGLSupported] = useState(true);
 
   useEffect(() => {
+    // Check WebGL support
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    setWebGLSupported(!!gl);
+
     // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
@@ -52,6 +58,17 @@ const ComputersCanvas = () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
+
+  if (!webGLSupported || isMobile) {
+    return (
+      <div className="flex justify-center items-center h-full">
+        <div className="text-center">
+          <h3 className="text-white text-lg font-bold">3D Computer Model</h3>
+          <p className="text-gray-400 text-sm">Not available on mobile devices or browsers without WebGL support.</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Canvas
