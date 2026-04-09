@@ -318,4 +318,5 @@ const projects = [
   },
 ];
 
+const newInfo = 'newInfo'
 export { services, technologies, experiences, testimonials, projects };
